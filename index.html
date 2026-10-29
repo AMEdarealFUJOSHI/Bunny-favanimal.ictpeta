@@ -1,0 +1,81 @@
+Artemis
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Favorite Animal</title>
+
+<style>
+body {
+  background: #fff0f5;
+  color: #795b67;
+  font-family: Georgia, serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  background: #fffaf0;
+  border: 3px dashed #f2a9c2;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 { color: #e17da5; }
+
+img {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+button {
+  background: #f6bdd2;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  body { padding: 10px; }
+  .card { padding: 15px; }
+}
+</style>
+</head>
+
+<body>
+<div class="card">
+
+  <h1>My Favorite Animal</h1>
+
+  <p>BUNNIES !! why? simply because they bring me joy!!🐰</p>
+
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv4oPtA1pVqESDKSnvOQpi0tOa5Bj8dsYOrn7J0pI25Q&s=10" alt="A cute bunny">
+
+  <h2>About Bunnies</h2>
+  <p>Bunnies are gentle, curious animals with
+  long ears, soft fur, and fluffy tails.</p>
+
+  <h2>🥕 Fun Facts</h2>
+  <p>♡ Rabbits' teeth grow throughout their lives.</p>
+  <p>♡ Happy rabbits sometimes jump and twist!</p>
+  <p>♡ Rabbits communicate using body movements.</p>
+
+  <button onclick="showFact()">More Bunny Facts!</button>
+  <p id="fact"></p>
+
+</div>
+
+<script>
+function showFact() {
+  document.getElementById("fact").innerHTML =
+    "Rabbits can see almost all around them!";
+}
+</script>
+
+</body>
+</html>
+```
